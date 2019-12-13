@@ -1,0 +1,11 @@
+task 'hello' {
+    group 'Conversation'
+    description 'Prints a friendly greeting'
+
+    def standardOutStream = new ByteArrayOutputStream()
+    doLast {
+        println "Greetings, ${recipient}!"
+        def sout = standardOutStream.toString()
+        assert sout == 'Greetings, mother!'
+    }
+}

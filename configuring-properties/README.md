@@ -5,7 +5,7 @@
 Add a `recipient` property to the `gradle.properties` file in the project directory.
 
 - Run `./gradlew hello`
-- Assert that the task not greets the `recipient` configured in the properties file
+- Assert that the task greets the `recipient` configured in the properties file
 
 Change the hello task to greet the newly defined property
 > hint: `"hello " + recipient`

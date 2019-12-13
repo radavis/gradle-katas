@@ -7,10 +7,8 @@ task 'setTheValue' {
 
     def message = "theValue was doubled"
 
-    doLast {
-        theValue = theValue * 2
-        println message
-    }
+    theValue = theValue * 2
+    println message
 }
 
 task 'printTheValue' {

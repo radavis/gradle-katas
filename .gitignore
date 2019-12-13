@@ -1,6 +1,7 @@
-# exercises
+# Ignore exercises, except certain files
 **/exercise/*
 !**/exercise/build.gradle
+!**/exercise/gradle.properties
 
 .gradle
 /build/

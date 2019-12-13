@@ -27,10 +27,12 @@ The value currently is: 100
 Run the commands and note the printed values.
 
 - Q: Did the output match your expectations? If not, what tripped you up?
-- A: I thought the value would double, but it did not. I assume because of the `def` statement.
+- A: I thought the value would double, but it did not.
 
 Make a small change to the `build.gradle` such that:
 
 - the `printTheValue`-task ends up printing `The value currently is: 200`,
-- when run after the `printTheValue` task and
+- when run after the `setTheValue` task and
 - while still using the `theValue` variable
+
+- A: Removing the 'doLast' block within 'setTheValue' seemed to do the trick.
