@@ -1,5 +1,6 @@
 # exercises
 **/exercise/*
+!**/exercise/build.gradle
 
 .gradle
 /build/

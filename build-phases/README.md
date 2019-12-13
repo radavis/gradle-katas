@@ -10,11 +10,24 @@ The `build.gradle` script in this exercise contains a property and two tasks:
 Predict the outcome of the following commands:
 
 - `./gradlew printTheValue`
+
+```
+Value initialized as: 100
+The value currently is: 100
+```
+
 - `./gradlew setTheValue printTheValue`
+
+```
+Value initialized as: 100
+theValue was doubled
+The value currently is: 100
+```
 
 Run the commands and note the printed values.
 
 - Q: Did the output match your expectations? If not, what tripped you up?
+- A: I thought the value would double, but it did not. I assume because of the `def` statement.
 
 Make a small change to the `build.gradle` such that:
 

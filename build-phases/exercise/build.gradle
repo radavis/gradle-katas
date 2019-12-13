@@ -1,0 +1,25 @@
+ext.theValue = 100
+println "Value initialized as: ${theValue}"
+
+task 'setTheValue' {
+    group 'Value'
+    description 'Doubles theValue'
+
+    def message = "theValue was doubled"
+
+    doLast {
+        theValue = theValue * 2
+        println message
+    }
+}
+
+task 'printTheValue' {
+    group 'Value'
+    description 'Prints the value'
+
+    def message = "The value currently is: ${theValue}"
+
+    doLast {
+        println message
+    }
+}
